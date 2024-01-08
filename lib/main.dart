@@ -81,7 +81,8 @@ class _TodoListState extends State<TodoList> {
           onCheckboxChanged: (bool value) {
             setState(() {
               // Aktualisiere den Status des To-Do-Eintrags im State
-              todos[index] = value ? 'Task ${index + 1} erledigt' : 'Task ${index + 1}';
+              todos[index] =
+                  value ? 'Task ${index + 1} erledigt' : 'Task ${index + 1}';
             });
           },
         );
